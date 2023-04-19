@@ -1,7 +1,16 @@
-.App {
-  text-align: center;
+
+.top-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  border: 1px solid black;
+  height: 20vh;
 }
 
-
-@media (prefers-reduced-motion: no-preference) {
+.bottom-container {
+  display: flex;
+  border: 1px solid black;
+  height: 60vh;
+  padding: 2em;
 }

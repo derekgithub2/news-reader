@@ -1,5 +1,5 @@
-const ArticleContainer = () => {
+const SingleArticle = () => {
 
 }
 
-export default ArticleContainer;
+export default SingleArticle;
