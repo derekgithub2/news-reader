@@ -9,6 +9,7 @@ import SingleView from '../SingleView/SingleView';
 const App = () => {
 
   const [currentArticle, setCurrentArticle] = useState()
+  const [searchInput, setSearchInput] = useState()
 
   return (
     <div className="App">
@@ -16,12 +17,13 @@ const App = () => {
         <Nav />
         <section className='form-container'>
           <h1>NY TIMES READER</h1>
-          <Search />
+          <Search setSearch={setSearchInput}/>
         </section>
       </section>
       <Routes>
-        <Route path='/' element={<ArticleContainer setCurrentArticle={setCurrentArticle}/>}/>
+        <Route path='/' element={<ArticleContainer sectionValue={searchInput} setCurrentArticle={setCurrentArticle}/>}/>
         <Route path='/details' element={<SingleView currentStory={currentArticle}/>}/>
+        <Route path='/filter' element={<ArticleContainer sectionValue={searchInput}/>}/>
       </Routes>
     </div>
   );
