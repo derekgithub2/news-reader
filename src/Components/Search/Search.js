@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import section from "./SectionValues";
 import { Link } from "react-router-dom";
+import './Search.css'
 
 const Search = ({setSearch}) => {
 
@@ -20,7 +21,7 @@ const Search = ({setSearch}) => {
     })
 
     return (
-        <div>
+        <div className="search-container">
             <form className="form">
                 <input
                 type="text"
@@ -34,6 +35,7 @@ const Search = ({setSearch}) => {
                 <datalist id="dropdown-menu">
                     {sectionList}
                 </datalist>
+            </form>
                 <div>
                     <Link to={`/filter`} style={{ textDecoration: 'none' }}>
                         <button onClick={handleClick} type="submit">
@@ -41,7 +43,6 @@ const Search = ({setSearch}) => {
                         </button>
                     </Link>
                 </div>
-            </form>
         </div>
     )
 }

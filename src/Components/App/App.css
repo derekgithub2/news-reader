@@ -2,6 +2,9 @@
   height: 100vh;
   overflow-y: auto;
 }
+h1 {
+  font-size: xx-large;
+}
 .top-container {
   display: flex;
   align-items: center;
