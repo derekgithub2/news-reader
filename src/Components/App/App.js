@@ -5,6 +5,7 @@ import Search from '../Search/Search'
 import ArticleContainer from '../ArticleContainer/ArticleContainer'
 import { Route, Routes } from 'react-router';
 import SingleView from '../SingleView/SingleView';
+import { Link } from 'react-router-dom';
 
 const App = () => {
 
@@ -16,7 +17,9 @@ const App = () => {
       <section className="top-container">
         <Nav />
         <section className='form-container'>
-          <h1>NY TIMES READER</h1>
+          <Link to='/' style={{ textDecoration: 'none' }} >
+            <h1>NY TIMES READER</h1>
+          </Link>
           <Search setSearch={setSearchInput}/>
         </section>
       </section>

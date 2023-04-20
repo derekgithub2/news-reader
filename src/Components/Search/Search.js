@@ -35,7 +35,7 @@ const Search = ({setSearch}) => {
                     {sectionList}
                 </datalist>
                 <div>
-                    <Link to={`/filter`}>
+                    <Link to={`/filter`} style={{ textDecoration: 'none' }}>
                         <button onClick={handleClick} type="submit">
                             GO!
                         </button>
