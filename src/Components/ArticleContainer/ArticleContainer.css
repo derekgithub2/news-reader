@@ -1,20 +1,40 @@
-/* .main-container {
-    display: grid;
-} */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+.top-main-container {
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+}
+
+.bottom-container {
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    padding: 5px;
+}
 
 .top-stories-container {
-    width: 25vw;
+    width: 50vw;
     display: grid;
     gap: 1em;
     grid-template-columns: repeat(3, 1fr);
     min-width: 100px;
 }
 
+.all-articles {
+    width: 15vw;
+}
+
 .placeholder {
     display: flex;
     border: 1px solid black;
-    height: 15vh;
-    width: 15vw;
+    height: 25vh;
+    width: 20vw;
     justify-content: center;
     align-items: center;
 }

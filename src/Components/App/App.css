@@ -1,4 +1,7 @@
-
+.app {
+  height: 100vh;
+  overflow-y: auto;
+}
 .top-container {
   display: flex;
   align-items: center;

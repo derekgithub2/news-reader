@@ -3,10 +3,10 @@ import './App.css';
 import Nav from '../Nav/Nav'
 import Search from '../Search/Search'
 import ArticleContainer from '../ArticleContainer/ArticleContainer'
+import { Route, Routes } from 'react-router';
 
 const App = () => {
 
-  
 
   const setSearchInput = () => {
     console.log('setSearchInput in app.js')
@@ -28,6 +28,9 @@ const App = () => {
         <ArticleContainer />
 
       </section>
+      {/* <Routes>
+        <Route path='/' />
+      </Routes> */}
     </div>
   );
 }
