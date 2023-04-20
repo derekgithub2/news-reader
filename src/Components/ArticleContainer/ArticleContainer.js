@@ -37,7 +37,7 @@ const ArticleContainer = ({sectionValue, setCurrentArticle}) => {
                                 return <SingleArticle 
                                 setArticle={setCurrentArticle}
                                 story={story}
-                                key={story.short_url}
+                                key={story.url}
                                 shortURL={story.short_url}
                                 section={story.section}
                                 subsection={story.subsection}
