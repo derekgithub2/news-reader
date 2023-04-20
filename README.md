@@ -40,6 +40,8 @@ A simple and easy-to-use web application to see the top stories from the New Yor
    Example: http://localhost:3000/
    ```
    
+## API Reference
+[NY Times API](https://developer.nytimes.com/)
    
 ## Contributors
 - Derek Yeh
