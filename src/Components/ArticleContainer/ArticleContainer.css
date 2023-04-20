@@ -13,28 +13,33 @@
 
 .bottom-container {
     display: flex;
-    justify-content: space-around;
     height: auto;
-    padding: 5px;
 }
 
 .top-stories-container {
-    width: 50vw;
     display: grid;
+    height: auto;
     gap: 1em;
     grid-template-columns: repeat(3, 1fr);
-    min-width: 100px;
 }
 
 .all-articles {
     width: 15vw;
 }
 
-.placeholder {
-    display: flex;
-    border: 1px solid black;
-    height: 25vh;
-    width: 20vw;
-    justify-content: center;
-    align-items: center;
+@media screen and (max-width: 1250px){
+    .top-stories-container {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        min-width: none;
+    }
 }
+
+@media screen and (max-width: 800px){
+    .top-stories-container {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        min-width: none;
+    }
+}
+

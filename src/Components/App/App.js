@@ -1,18 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Nav from '../Nav/Nav'
 import Search from '../Search/Search'
 import ArticleContainer from '../ArticleContainer/ArticleContainer'
 import { Route, Routes } from 'react-router';
+import SingleView from '../SingleView/SingleView';
 
 const App = () => {
 
-
-  const setSearchInput = () => {
-    console.log('setSearchInput in app.js')
-  }
-
-
+  const [currentArticle, setCurrentArticle] = useState()
 
   return (
     <div className="App">
@@ -20,17 +16,13 @@ const App = () => {
         <Nav />
         <section className='form-container'>
           <h1>NY TIMES READER</h1>
-          <Search setSearch={setSearchInput} />
+          <Search />
         </section>
       </section>
-      <section className='bottom-container'>
-
-        <ArticleContainer />
-
-      </section>
-      {/* <Routes>
-        <Route path='/' />
-      </Routes> */}
+      <Routes>
+        <Route path='/' element={<ArticleContainer setCurrentArticle={setCurrentArticle}/>}/>
+        <Route exact path='/:id' element={<SingleView />}/>
+      </Routes>
     </div>
   );
 }
