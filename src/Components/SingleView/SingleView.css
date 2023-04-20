@@ -1,0 +1,10 @@
+.current-story {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.story-image {
+    width: 50vw;
+}

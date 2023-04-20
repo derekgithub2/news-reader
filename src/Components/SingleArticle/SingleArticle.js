@@ -5,10 +5,9 @@ import { Link } from "react-router-dom";
 const SingleArticle = ({setArticle, story, shortURL, section, subsection, title, url, created_date}) => {
 
     const shorterURL = shortURL.replace('https://nyti.ms/', '')
-    
-    const handleClick = (event) => {
-        event.preventDefault()
-        setArticle(story)
+
+    const handleClick = (action) => {
+        action(story)
     }
 
     return (
@@ -17,8 +16,8 @@ const SingleArticle = ({setArticle, story, shortURL, section, subsection, title,
             {/* <p>section: {section}</p>
             <p>subsection: {subsection}</p>
             <a href={url}>go to the article!</a> */}
-            <Link to={`/${shorterURL}`}>
-                <button onClick={(event) => {handleClick(event)}}>More infomation on the article</button>
+            <Link to={`/details`}>
+                <button onClick={() => {handleClick(setArticle)}}>More infomation on the article</button>
             </Link>
         </div>
     )

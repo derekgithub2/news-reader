@@ -21,7 +21,7 @@ const App = () => {
       </section>
       <Routes>
         <Route path='/' element={<ArticleContainer setCurrentArticle={setCurrentArticle}/>}/>
-        <Route exact path='/:id' element={<SingleView />}/>
+        <Route path='/details' element={<SingleView currentStory={currentArticle}/>}/>
       </Routes>
     </div>
   );
