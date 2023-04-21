@@ -31,6 +31,7 @@ const App = () => {
         <Route path='/' element={<ArticleContainer sectionValue={searchInput} setCurrentArticle={setCurrentArticle}/>}/>
         <Route path='/details' element={<SingleView currentStory={currentArticle}/>}/>
         <Route path='/filter' element={<ArticleContainer sectionValue={searchInput}/>}/>
+        <Route path='*' element={<ArticleContainer sectionValue={searchInput} setCurrentArticle={setCurrentArticle}/>}/>
       </Routes>
     </div>
   )
