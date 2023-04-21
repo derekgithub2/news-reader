@@ -26,7 +26,7 @@ const Search = ({setSearch}) => {
             <form className="form">
                 <input
                 type="text"
-                placeholder="Search..."
+                placeholder="Search by topic..."
                 className="input-field"
                 list="dropdown-menu"
                 value={userChoice}
