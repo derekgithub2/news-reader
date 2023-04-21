@@ -7,6 +7,10 @@ A simple and easy-to-use web application to see the top stories from the New Yor
 - Users can filter their search by subcategory in the serach bar to see articles of a chosen subsection of the NY Times.
 - Users can click into articles to see some more details about the article, including a link to the original article on the NY Times website. 
 
+## Preview
+![Screen Shot 2023-04-21 at 11 42 40 AM](https://user-images.githubusercontent.com/113647295/233711717-e1ea2169-e9ee-4fa2-bf2f-a9d62ef62460.png)
+
+
 ## Technologies
 <div>
   <img src="https://img.shields.io/badge/-react-333333?logo=react&style=for-the-badge" width="100" height="30"/>
