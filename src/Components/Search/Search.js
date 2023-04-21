@@ -14,6 +14,7 @@ const Search = ({setSearch}) => {
 
     const handleClick = (e) => {
         setSearch(userChoice);
+        setUserChoice('')
     }
 
     const sectionList = section.map((el) => {

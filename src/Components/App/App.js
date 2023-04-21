@@ -12,13 +12,17 @@ const App = () => {
   const [currentArticle, setCurrentArticle] = useState()
   const [searchInput, setSearchInput] = useState()
 
+  const handleHomeClick = () => {
+    setSearchInput('')
+  }
+
   return (
     <div className="App">
       <section className="top-container">
         <Nav />
         <section className='form-container'>
           <Link to='/' style={{ textDecoration: 'none' }} >
-            <h1>NY TIMES READER</h1>
+            <h1 onClick={handleHomeClick}>NY TIMES READER</h1>
           </Link>
           <Search setSearch={setSearchInput}/>
         </section>
