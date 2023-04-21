@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import './App.css'
-import Nav from '../Nav/Nav'
 import Search from '../Search/Search'
 import ArticleContainer from '../ArticleContainer/ArticleContainer'
 import { Route, Routes } from 'react-router'
@@ -19,7 +18,6 @@ const App = () => {
   return (
     <div className="App">
       <section className="top-container">
-        <Nav />
         <section className='form-container'>
           <Link to='/' style={{ textDecoration: 'none' }} >
             <h1 onClick={handleHomeClick}>NY TIMES READER</h1>
