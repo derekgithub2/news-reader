@@ -13,11 +13,8 @@ const SingleArticle = ({setArticle, story, shortURL, section, subsection, title,
     return (
         <div className="card">
             <h3>{title}</h3>
-            {/* <p>section: {section}</p>
-            <p>subsection: {subsection}</p>
-            <a href={url}>go to the article!</a> */}
             <Link to={`/details`}>
-                <button onClick={() => {handleClick(setArticle)}}>More infomation on the article</button>
+                <button className="info-btn" onClick={() => {handleClick(setArticle)}}>More infomation on the article</button>
             </Link>
         </div>
     )

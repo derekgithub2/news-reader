@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import './App.css';
+import React, { useState } from 'react'
+import './App.css'
 import Nav from '../Nav/Nav'
 import Search from '../Search/Search'
 import ArticleContainer from '../ArticleContainer/ArticleContainer'
-import { Route, Routes } from 'react-router';
-import SingleView from '../SingleView/SingleView';
-import { Link } from 'react-router-dom';
+import { Route, Routes } from 'react-router'
+import SingleView from '../SingleView/SingleView'
+import { Link } from 'react-router-dom'
 
 const App = () => {
 
@@ -29,7 +29,7 @@ const App = () => {
         <Route path='/filter' element={<ArticleContainer sectionValue={searchInput}/>}/>
       </Routes>
     </div>
-  );
+  )
 }
 
 export default App;

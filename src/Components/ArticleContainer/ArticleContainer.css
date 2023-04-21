@@ -14,6 +14,7 @@
 .bottom-container {
     display: flex;
     height: auto;
+    background-color: beige;
 }
 
 .top-stories-container {

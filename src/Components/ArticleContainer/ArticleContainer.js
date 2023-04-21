@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react"
 import SingleArticle from '../SingleArticle/SingleArticle'
 import './ArticleContainer.css'
 // import {mockData} from '../../mockData'
@@ -20,7 +20,7 @@ const ArticleContainer = ({sectionValue, setCurrentArticle}) => {
             })
             setTopStories(newData.results)
         }
-        fetchData();
+        fetchData()
         setLoading(false)
     },[sectionValue])
 
@@ -57,4 +57,4 @@ const ArticleContainer = ({sectionValue, setCurrentArticle}) => {
     }
 }
 
-export default ArticleContainer;
+export default ArticleContainer
